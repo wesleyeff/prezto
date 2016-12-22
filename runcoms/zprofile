@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR=/usr/local/bin/code
+export VISUAL=/usr/local/bin/code
 export PAGER='less'
 
 #
