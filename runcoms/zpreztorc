@@ -31,8 +31,12 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'ssh' \
   'completion' \
+  'osx' \
   'git' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -95,7 +99,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Auto set to 'off' on dumb terminals.
 # zstyle ':prezto:module:prompt' theme 'sorin'
 # zstyle ':prezto:module:prompt' theme 'giddie'
-  zstyle ':prezto:module:prompt' theme 'cloud'
+# zstyle ':prezto:module:prompt' theme 'cloud'
+zstyle ':prezto:module:prompt' theme 'josh'
 
 
 #
