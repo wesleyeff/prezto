@@ -33,6 +33,10 @@ version is 4.3.17.
 
   5. Open a new Zsh terminal window or tab.
 
+  6. Install powerlevel9k
+      - https://github.com/bhilburn/powerlevel9k#installation
+      - https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#option-3-install-for-prezto
+
 ### Troubleshooting
 
 If you are not able to find certain commands after switching to *Prezto*,
