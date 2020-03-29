@@ -43,6 +43,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'contrib-prompt' \
   'prompt'
 
 #
@@ -125,9 +126,9 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # zstyle ':prezto:module:prompt' theme 'giddie'
 # zstyle ':prezto:module:prompt' theme 'cloud'
 # zstyle ':prezto:module:prompt' theme 'josh'
-POWERLEVEL9K_MODE='awesome-patched'
-zstyle ':prezto:module:prompt' theme 'powerlevel9k'
-
+# POWERLEVEL9K_MODE='awesome-patched'
+# zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+zstyle ':prezto:module:prompt' theme 'spaceship'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)

@@ -18,6 +18,8 @@ export NVM_DIR="/Users/wesley/.nvm"
 alias nvm-upgrade-latest="nvm install node --reinstall-packages-from=node"
 alias zprezto-update="cd ~/.zprezto && git pull && git submodule update --init --recursive"
 alias reload="exec zsh"
+alias rmnodemodules="rm -f package-lock.json && rm -rf node_modules && npm i"
+alias rmyarnmodules="rm -f yarn.lock && rm -f package-lock.json && rm -rf node_modules && yarn"
 #alias redis-up="redis-server /usr/local/etc/redis.conf"
 
 function precmd() {
@@ -33,5 +35,13 @@ function precmd() {
 
 # POWERLEVEL9K
 # POWERLEVEL9K_MODE='awesome-patched'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir node_version vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir node_version vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/wesley/Developer/vslr/journey-service/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/wesley/Developer/vslr/journey-service/node_modules/tabtab/.completions/slss.zsh
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
