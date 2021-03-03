@@ -23,6 +23,23 @@ version is 4.3.11.
      ```console
      git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
      ```
+     
+     ```
+     git remote add upstream https://github.com/sorin-ionescu/prezto.git
+     ```
+     
+     ```
+     $ cd PROJECT_NAME
+     $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+     $ git fetch upstream
+
+     # then: (like "git pull" which is fetch + merge)
+     $ git merge upstream/master master
+
+     # or, better, replay your local work on top of the fetched branch
+     # like a "git pull --rebase"
+     $ git rebase upstream/master
+     ```
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
